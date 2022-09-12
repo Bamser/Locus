@@ -1,0 +1,50 @@
+.mission {
+       margin: 10rem auto;
+    &__wrapper {
+        display: flex;
+    }
+    &__discription {
+        margin-left: 14.5rem;
+        max-width:  70.7rem;
+       &-title {
+        font-weight: 700;
+        font-size: 4rem;
+        margin-bottom: 5rem;
+       }
+        &-text {
+        font-weight: 500;
+        font-size: 3rem;
+        line-height: 1.5;
+        color: #486958;
+        }
+    }
+}
+
+@media (max-width:767.9px) {
+
+}
+
+
+@media (max-width:479.9px) {
+     .mission__wrapper {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+     }
+    .mission__discription {
+        max-width: 100%;
+        margin-top: 5rem;
+        text-align: center;
+       &-title {
+        font-size: 7rem;
+        margin-bottom: 5rem;
+       }
+        &-text {
+        width: 100%;
+        font-size: 5rem;
+        }
+    }
+    br {
+        display: none;
+    }
+}

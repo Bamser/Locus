@@ -1,0 +1,23 @@
+.hero {
+    margin-top: 10rem;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__description {
+        max-width: 73.4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5rem;
+        &-text {
+            font-size: 3rem;
+            line-height: 1.5;
+            color: #404242;
+        }
+    }
+    &__img {
+        max-width: 83.4rem;
+        margin-right: -6rem;
+    }
+}

@@ -1,0 +1,116 @@
+.girl {
+    margin-bottom: 10rem;
+    &__text-text {
+        max-width: 75.2rem;
+        margin: 0 auto;
+    }
+    &__wrap {
+        display: flex;
+    }
+    &__img {
+        margin-top: -1rem;
+        margin-right: 1.5rem;
+        max-width: 61.5rem;
+    }
+    &__stat {
+        position: relative;
+        max-width: 99.7rem;
+        margin-bottom: -1rem;
+        background-color: #CCF0E6;
+        &__numbers {
+            display: flex;
+           margin-left: 7rem;
+            &-item {
+                padding-top: 5rem;
+                padding-left: 10rem;
+            }
+        }
+        &-text {
+            position: relative;
+            z-index: 1;
+            padding: 5rem;
+            font-weight: 500;
+            font-size: 2.5rem;
+            line-height: 1.5;
+            color: #486958;
+
+        }
+        &-signature {
+            padding-left: 5rem;
+            font-weight: 500;
+            font-size: 2.5rem;
+            line-height: 1.5;
+            color: #58A9A5;
+
+        }
+    }
+    &__bg {
+        position: absolute;
+       bottom: 35rem;
+       left: 12rem;
+       z-index: 0;
+    }
+}
+.item__sum {
+    font-weight: 800;
+    font-size: 7rem;
+    line-height: 1.5;
+    color: #58A9A5;
+}
+.item__text {
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 1.5;
+    color: #58A9A5;
+}
+
+
+@media (max-width:1338px) {
+    .girl__bg {
+        display: none;
+    }
+}
+
+@media (max-width:479.9px) {
+    .girl {
+        margin-bottom: 10rem;
+        &__text-text {
+            max-width: 100%;
+            padding-left: 5rem;
+        }
+        &__wrap {
+            flex-direction: column;
+        }
+        &__img {
+           max-width: 100%;
+        }
+        &__stat {
+            margin-top: 5rem;
+            max-width: 100%;
+            &__numbers {
+                display: flex;
+               justify-content: center;
+                &-item {
+                    padding-top: 5rem;
+                    padding-left: 10rem;
+                }
+            }
+            &-text {
+                position: relative;
+                z-index: 1;
+                padding:  5rem;
+                font-size: 5rem;
+    
+            }
+            &-signature {
+                font-size: 5rem;
+            }
+        }
+    }
+    .item__sum {
+        font-size: 14rem;
+    }
+    .item__text {
+        font-size: 6rem;
+    }
+}

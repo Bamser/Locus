@@ -1,0 +1,102 @@
+.project {
+margin-top: 10rem;
+margin-bottom: 10rem;
+&__items {
+    margin-top: 15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12rem;
+}
+&__item {
+    &-title {
+        margin-bottom: 2rem;
+        font-weight: 700;
+        font-size: 4rem;
+        line-height: 1.5;
+        color: #58A9A5;
+    }
+    &-text {
+        margin-bottom: 2rem;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 1.5;
+        color: #486958;
+    }
+    &-img {
+        margin-bottom: 2rem;
+    }
+}
+}
+.title__project {
+    text-align: center;
+    position: relative;
+    &-text {
+       font-size: 3rem;
+       line-height: 1.5;
+       color: #404242;
+       }
+       &::before {
+        position: absolute;
+        content: '';
+        top: 18rem;
+        right: 46%;
+        width: 13.5rem;
+        height: .5rem;
+       background-color: #58A9A5;
+       }
+       &::after {
+        position: absolute;
+        content: '';
+        top: 20rem;
+        right: 46%;
+        width: 13.5rem;
+        height: .5rem;
+        background-color: #58A9A5;
+       }
+}
+
+@media (max-width:479.9px) {
+    .project {
+        &__items {
+            flex-direction: column;
+            gap: 10rem;
+        }
+        &__item {
+            text-align: center;
+            &-title {
+                font-weight: 700;
+                font-size: 8rem;
+                line-height: 1.5;
+                color: #58A9A5;
+            }
+            &-text {
+                font-weight: 500;
+                font-size: 4rem;
+                line-height: 1.5;
+                color: #486958;
+            }
+        }
+        }
+        .title {
+            font-size: 14rem;
+        }
+        .title__project {
+            &-text {
+               font-size: 6rem;
+               line-height: 1.5;
+               }
+               &::before {
+                top: 32rem;
+                right: 42%;
+                width: 25rem;
+                height: 1rem;
+               }
+               &::after {
+                top: 30rem;
+                right: 42%;
+                width: 25rem;
+                height: 1rem;
+               }
+        }
+}
